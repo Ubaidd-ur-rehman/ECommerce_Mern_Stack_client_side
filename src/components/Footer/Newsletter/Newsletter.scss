@@ -1,0 +1,112 @@
+@import "../../../css-config/mixins.scss";
+.newsletter-section {
+  width: 100%;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  background: url("../../../assets/footer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.social-icon .icon {
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding-top: 9px;
+  padding-left: 1px;
+  height: 39px;
+  width: 7%;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.social-icon {
+  margin-top: 25px;
+  margin-left:-15px ;
+}
+.social-icon .icon:hover {
+  color: lightgray;
+  cursor: pointer;
+}
+.small-text {
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgb(0, 0, 0, 0.5);
+}
+.big-text {
+  margin: 25px 0;
+}
+.form {
+  margin: 15px 0;
+}
+.form input {
+  width: 50%;
+  height: 35px;
+  padding: 0 10px 0 29px;
+  color: #555555;
+  border: 1px solid black;
+  background: url("../../../assets/Search_icon.png");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: left;
+  font-size: 15px;
+}
+.form input:focus {
+  background: none;
+  background-position: right center;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.form button {
+  margin-left: 5px;
+  padding: 10px;
+  width: 18%;
+  background-color:#d31366;
+  color: white;
+  border: none;
+}
+.form button:hover {
+  background-color: #662D8C;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .big-text {
+    font-size: 28px;
+  }
+  
+  .social-icon .icon {
+    width: 8%; 
+  }
+
+  .newsletter-section {
+    height: 500px;
+    background-image: url("../../../assets/newsletter-bg.jpeg");
+  }
+
+}
+@media screen and (max-width: 450px) {
+  .big-text {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .form button {
+    margin-left: 5px;
+    padding: 10px;
+    width: 22%;
+    background-color: #8e2de2;
+    color: white;
+    border: none;
+  }
+  .social-icon .icon {
+    width: 9%;
+  }
+}
